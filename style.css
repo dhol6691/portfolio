@@ -8,10 +8,10 @@ div{
 /* Start of Navbar settings */
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 6.5vh;
     background-color: #fca311;
-    font-family: "Nunito Sans", sans-serif;
+    font: menu;
     
   }
   
@@ -143,10 +143,13 @@ footer{
     background-color: #2F4858;
     display: flex; 
     flex-direction: column;
-    
 
 
+}
 
+.contact-text{
+
+    color: white;
 }
 
 .main-blog{
@@ -174,4 +177,10 @@ footer{
 
     font-style: italic;
     font-size: small;
+}
+
+.readme{
+
+    color: #f6ae2d;
+    font-weight: bold;
 }
