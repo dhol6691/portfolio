@@ -5,6 +5,44 @@ div{
     padding: 5px;
 }
 
+/* Start of Navbar settings */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 6.5vh;
+    background-color: #fca311;
+    font-family: "Nunito Sans", sans-serif;
+    
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+
+
+  }
+  
+.nav-links li {
+
+    list-style: none;
+    
+
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    /* Mouse hover effect */
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #000000ff;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  
 
 header{
 
@@ -14,13 +52,18 @@ header{
     align-items: center;
     font: menu;
     color: #f6ae2d;
+    font-size: 20px;
+    text-align: center;
 
 }
 
-.My-Picture img{
+.My-Background img{
 
     
-    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+
+
        
     
 }
@@ -50,7 +93,7 @@ header{
         flex-direction: column;
         align-items: center;
         font: menu;
-        font-size: medium;
+        font-size: 20px;
         color: #f6ae2d;
         background-color: #33658a;
         border: double whitesmoke thick;
@@ -84,11 +127,15 @@ header h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .contact-info p{
-
-    margin: 2px;
+    
+    margin: 3px;
+    color:#f6ae2d;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 footer{
@@ -96,7 +143,35 @@ footer{
     background-color: #2F4858;
     display: flex; 
     flex-direction: column;
+    
 
 
 
+}
+
+.main-blog{
+
+    background-color: #2F4858;
+}
+
+.main-blog-posts{
+
+    color: white;
+    font-size: 20px;
+    font-style: menu;
+}
+
+
+.contact-me{
+    display: flex;
+    flex-direction: row;
+
+   
+
+}
+
+.disclaimer{
+
+    font-style: italic;
+    font-size: small;
 }
