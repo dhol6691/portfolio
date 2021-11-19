@@ -8,37 +8,34 @@ div{
 /* Start of Navbar settings */
 .navbar {
     display: flex;
-    justify-content: space-evenly;
-    height: 6.5vh;
-    background-color: #fca311;
+    flex-direction: column;
+    
+    background-color: red;
     font: menu;
     
   }
   
   .nav-links {
     display: flex;
-    flex-direction: row;
-
-
-  }
-  
-.nav-links li {
-
-    list-style: none;
+    flex-direction: column;
     
-
   }
-  
+
   .navbar .nav-links a {
+    display: flex;
+    
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
+    padding: 2px;
+    
+    
     /* Mouse hover effect */
   }
   
   .navbar .nav-links a:hover {
-    color: #000000ff;
+    color: orange;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
   }
@@ -62,7 +59,8 @@ header{
     
     display: flex;
     flex-wrap: wrap;
-
+    height: 200px;
+    width: 250px;
 
        
     
@@ -167,9 +165,7 @@ footer{
 
 .contact-me{
     display: flex;
-    flex-direction: row;
-
-   
+    flex-direction: column;
 
 }
 
@@ -183,4 +179,75 @@ footer{
 
     color: #f6ae2d;
     font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main.content{
+
+    display: flex;
+    flex-direction: row;
+    }
+    .My-Background img{
+        width: 800px;
+        height: 400px;
+        justify-content: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: 10.5vh;
+        background-color: orange;
+        font: menu;
+        
+      }
+      
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        
+    
+    
+      }
+    
+      
+      .navbar .nav-links a {
+        display: flex;
+        
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 20px;
+        margin-left: 10px;
+        background-color: #2F4858;
+        border-radius: 20px 2px 20px;
+        /* Mouse hover effect */
+      }
+      
+      .navbar .nav-links a:hover {
+        color: orange;
+        -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+      }
+      
+      .My-Background img{
+
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+
+    .contact-me{
+        display: flex;
+        flex-direction: row;
+    }
 }
